@@ -18,9 +18,9 @@ function BasicExample() {
     return (
         <Navbar expand="lg" className="bg-success p-2 text-dark bg-opacity-10 shadow p-3 mb-5 rounded mb-3">
             <Container>
-                <Navbar.Brand href="/studentList" className=''><h1 className='shadow-lg bg-opacity-10 p-3 mb-5 rounded'>
+                <Navbar.Brand href="/studentList" className=''><p className='shadow-lg bg-opacity-10 p-3 mb-5 rounded'>
                     Student Salary Management System
-                </h1></Navbar.Brand>
+                </p></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
