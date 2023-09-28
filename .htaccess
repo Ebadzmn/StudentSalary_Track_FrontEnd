@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteBase /
+
+# Serve static files from the React app
+RewriteRule ^assets/ - [L]
+RewriteRule ^favicon.ico$ - [L]
+RewriteRule ^index.html$ - [L]
+RewriteRule ^manifest.json$ - [L]
+RewriteRule ^robots.txt$ - [L]
+RewriteRule ^service-worker.js$ - [L]
+RewriteRule ^precache-manifest\.[0-9a-f]+\.js$ - [L]
+RewriteRule ^asset-manifest\.[0-9a-f]+\.json$ - [L]
+
+# Rewrite all other routes to the React app's index.html file
+RewriteRule ^(.*)$ /index.html [L]
